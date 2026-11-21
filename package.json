@@ -1,0 +1,12 @@
+{
+  "name": "pi-kasracode-provider",
+  "version": "0.1.0",
+  "description": "Pi extension that adds KasraCode (https://code.kasracloud.ir/v1) as an OpenAI-compatible provider with live model discovery.",
+  "type": "module",
+  "keywords": ["pi-package", "pi-extension", "pi-provider"],
+  "license": "MIT",
+  "files": ["index.ts", "README.md"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
