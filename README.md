@@ -6,14 +6,17 @@ Adds a `kasracode` provider to [Pi](https://pi.dev). It connects to the OpenAI-c
 ## Install
 
 ```bash
-# install as a Pi package (global)
-pi install /Users/naser/Documents/Development/kasracode-to-pi-agent
+pi install git:github.com/naserdehghan/kasracode-pi-provider
+```
 
-# or symlink it into the auto-discovered extensions folder
-ln -s "$PWD" ~/.pi/agent/extensions/kasracode
+You can pin a tag or branch with `@<ref>`, for example `git:github.com/naserdehghan/kasracode-pi-provider@v0.1.0`.
+Run `pi update --extensions` later to get new versions.
 
-# or try it out once
-pi -e ./index.ts
+To try it once without installing:
+
+```bash
+git clone https://github.com/naserdehghan/kasracode-pi-provider
+pi -e ./kasracode-pi-provider/index.ts
 ```
 
 ## Set the API key
